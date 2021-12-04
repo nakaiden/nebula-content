@@ -2,12 +2,12 @@
 //      Each loop it should log to the console 'the current index is _'
 
 for(let i =0; i <=30; i++){
-    console.log(`the current index is ${[i]}`)   
+    console.log(`the current index is ${i}`)   
 }
 
 // 2.   Declare a for loop that starts at 1, goes until 10, and increments by 2
 //      Each loop it should log to the console the current index
-for(let i =1; i <=10; i++){
+for(let i =1; i <=10; i+=2){
     console.log(i);
 }
 
@@ -43,9 +43,10 @@ console.log(firstName)
 let lastName =[]
 let intlName = []
 for(let i = 0; i < topCeleb.length; i++){
-    lastName.push(topCeleb[i].split(" ")[1]) 
+    lastName.push(topCeleb[i].split(" ")[1]);
+    intlName.push(topCeleb[i].split(' ')[1][0]) 
 }
-console.log(lastName)
+console.log(lastName, intlName)
 
 // 7.   Convert your celebrity array to all caps and no spaces:
 //      Ex:
@@ -66,8 +67,8 @@ for(let i = 0; i < topCeleb.length; i++){
     if(topCeleb[i] === favCeleb){
         console.log(topCeleb[i]);
         break;
-
     }
+    console.log('Not Fav')
 }
 //      Log that name to the console and break out of the loop
 
