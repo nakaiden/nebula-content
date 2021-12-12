@@ -15,7 +15,7 @@ cubes.forEach(div => {
     const randomNum = Math.floor(Math.random() * 7);
     div.style.backgroundColor = colors[randomNum];
     div.innerText= colors[randomNum];
-    })
+})
 
 
 

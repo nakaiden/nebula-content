@@ -1,0 +1,18 @@
+body{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.idCard{
+    margin-top: 20px;
+    font-size:105%;
+    color: white;
+    background-color: rgb(48, 46, 46);
+    border-radius: 5px;
+    height: 200px;
+    width: 400px;
+    border-style:ridge ;
+    text-align: center;
+
+    
+}
