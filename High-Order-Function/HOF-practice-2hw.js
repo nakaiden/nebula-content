@@ -18,9 +18,9 @@ console.log(doubler, halves, pow);
 
 
 // 2.   Write a higher order function that calculates some features of a string
-const welcome = ['Howdy Partner!']
+const welcome = 'Howdy Partner!'
 //      Ex: stringInfo(length, 'Howdy Partner!') => 14
-const strngTotal = welcome.reduce((x)=>welcome.length)
+const strngTotal = welcome.reduce((a)=> a +1, 0)
 console.log(strngTotal)
 //      Ex: stringInfo(vowels, 'Howdy Partner!') => 3
 const vowels = ['a','e','i','o','u']
@@ -42,5 +42,15 @@ welcome.forEach((welcome)=>{
 // 3.   Write a higher order function that minimizes a given list of numbers into one number
 //      Ex: minimizeNums(add, [2,3,5,8]) => 18
     const grouped = [5,10,15,20,25]
-    let total = (grouped.reduce((x,curr) => x + curr));
+    let total = grouped.reduce((x,curr) => x + curr);
+
+    function loop(func,arr){
+        let sum = 0
+
+        for (let i = 0; i < arr.length; i++){
+            sum = adder(sum, arr[i]) 
+        }
+
+        return sum
+    }
     console.log(total);

@@ -1,11 +1,29 @@
 /* Array HOF */
 
-// .forEach
+
+//Array.forEach()
+// The forEach() method executes a provided function once for each array element.
+// This array doesnt return anything it 'does something' for each element
+// We often see students confuse this Higher Order Function with .map()
+// Think, "Do I need an output array or am I doing something else?"
+// If the answer is, "Yes, I need an output array" => .map()
+// Otherwise it could be .forEach()
 
 // using HOF .map - transforms one array into a new one
 
 //.filter
-// .reduce - takes an array and returns 1 value from it
+// Array.filter()
+// The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+// Returns a new array, of equal or lesser length.
+// Ex: "Given an array of positives and negatives, give me a new array of only positive numbers"
+
+// .reduce - takes an array and returns 1 cumalitive value from it
+// Array.reduce()
+// The reduce() method executes a callback function on each element of the array, in order, passing in the returned value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.
+
+//.find
+//Array.find()
+// The find() method returns the value of the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
 
 // .sort - sort an array MUTATES THE ORIGINAL ARRAY
 
@@ -68,3 +86,11 @@ console.log(calculate(mult, [1,2,3,4]))
 //          Ex: oneType(strings, ['I love coding', 10, undefined, Infinity, 'goosfraba', null, ['Nested Array!']]) => ['I love coding, 'goosfraba']
 //          Ex: oneType(arrays, ['I love coding', 10, undefined, Infinity, 'goosfraba', null, ['Nested Array!']]) => ['Nested Array!']
 //          Ex: oneType(nums, ['I love coding', 10, undefined, Infinity, 'goosfraba', null, ['Nested Array!']]) => [10, Infinity]
+
+
+//.sort
+// Array.sort()
+// The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+
+// The time and space complexity of the sort cannot be guaranteed as it depends on the implementation.
+
